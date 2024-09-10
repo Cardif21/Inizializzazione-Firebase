@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Initialization</title>
+
+  <!-- Inizializzazione Firebase tramite lo script che hai fornito -->
+  <script type="module">
+    // Importa le funzioni necessarie dall'SDK di Firebase
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+
+    // Configurazione Firebase del tuo progetto
+    const firebaseConfig = {
+      apiKey: "AIzaSyDYtLmrzqTcZXxd5LDGSkJs76VzE0dvtBY",
+      authDomain: "qi-tester-game.firebaseapp.com",
+      databaseURL: "https://qi-tester-game-default-rtdb.firebaseio.com",
+      projectId: "qi-tester-game",
+      storageBucket: "qi-tester-game.appspot.com",
+      messagingSenderId: "951469093931",
+      appId: "1:951469093931:web:3436fe36657bf90102e66e",
+      measurementId: "G-74QJ79FM9B"
+    };
+
+    // Inizializza Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    // Conferma nel console log che Firebase è stato inizializzato
+    console.log("Firebase è stato inizializzato correttamente.");
+  </script>
+</head>
+
+<body>
+  <h1>Inizializzazione Firebase</h1>
+  <p>Firebase è stato caricato e inizializzato con successo. Controlla la console per conferma.</p>
+</body>
+
+</html>
